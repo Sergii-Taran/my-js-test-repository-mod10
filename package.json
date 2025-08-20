@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/my-js-test-repository-mod9/",
+    "build": "vite build --base=/my-js-test-repository-mod10/",
     "preview": "vite preview"
   },
   "devDependencies": {
