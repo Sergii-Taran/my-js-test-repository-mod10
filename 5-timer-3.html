@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notification</title>
-    <script type="module" crossorigin src="/my-js-test-repository-mod10/3-notification.js"></script>
+    <title>Timer-3</title>
+    <script type="module" crossorigin src="/my-js-test-repository-mod10/5-timer-3.js"></script>
     <link rel="modulepreload" crossorigin href="/my-js-test-repository-mod10/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/styles-zyU_F297.css">
   </head>
@@ -12,11 +13,16 @@
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">Notification</h1>
+        <h1 class="main-title">Timer-3</h1>
       </div>
+      <div class="timer">
+        <p class="clockface"></p>
 
-      <!-- NOTIFICATION -->
-      <p class="alert success js-alert">Success!</p>
+        <div class="actions">
+          <button class="timer-btn" data-action-start>Start</button>
+          <button class="timer-btn" data-action-stop>Stop</button>
+        </div>
+      </div>
     </main>
 
   </body>

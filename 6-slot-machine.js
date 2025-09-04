@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const c=document.querySelector(".start-btn"),r=document.querySelector(".slot-container");document.querySelector(".result");c.addEventListener("click",a);function a(){const o=[...r.children].map(()=>new Promise((e,t)=>{Math.random()>.5?e("🤑"):t("👿")}));Promise.allSettled(o).then(e=>{e.forEach((t,n)=>{setTimeout(()=>{r.children[n].textContent=t.value||t.reason},1e3*(n+1))})})}
+//# sourceMappingURL=6-slot-machine.js.map

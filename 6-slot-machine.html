@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notification</title>
-    <script type="module" crossorigin src="/my-js-test-repository-mod10/3-notification.js"></script>
+    <title>Slot machine</title>
+    <script type="module" crossorigin src="/my-js-test-repository-mod10/6-slot-machine.js"></script>
     <link rel="modulepreload" crossorigin href="/my-js-test-repository-mod10/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/styles-zyU_F297.css">
   </head>
@@ -12,11 +12,18 @@
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">Notification</h1>
+        <h1 class="main-title">Slot machine</h1>
       </div>
 
-      <!-- NOTIFICATION -->
-      <p class="alert success js-alert">Success!</p>
+      <div class="game-container">
+        <button class="start-btn">Start game</button>
+        <div class="slot-container">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <p class="result"></p>
+      </div>
     </main>
 
   </body>
