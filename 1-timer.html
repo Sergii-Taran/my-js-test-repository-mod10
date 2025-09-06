@@ -5,15 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/izitoast/dist/css/iziToast.min.css"
+    />
+
     <script type="module" crossorigin src="/my-js-test-repository-mod10/1-timer.js"></script>
     <link rel="modulepreload" crossorigin href="/my-js-test-repository-mod10/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/styles-zyU_F297.css">
+    <link rel="modulepreload" crossorigin href="/my-js-test-repository-mod10/assets/vendor-BbSUbo7J.js">
+    <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/vendor-C1gPI-5C.css">
+    <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/1-timer-0ZWa-0hY.css">
+    <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod10/assets/styles-CosmgL4z.css">
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Timer</h1>
+      </div>
+
+      <div class="timer-container">
+        <input type="text" id="datetime-picker" />
+        <button type="button" data-start>Start</button>
+
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
       </div>
     </main>
 
