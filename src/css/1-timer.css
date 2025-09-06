@@ -1,0 +1,59 @@
+.timer-container {
+  margin-top: 50px;
+}
+
+.controls {
+  margin-bottom: 25px;
+}
+
+#datetime-picker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button[data-start] {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background: #005ad3;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 25px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 42px;
+  font-weight: bold;
+  display: block;
+  color: #0077ff;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #555;
+}

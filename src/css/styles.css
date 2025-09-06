@@ -16,6 +16,8 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
+/* Timer */
+
 /* Notification */
 
 .alert {
@@ -50,6 +52,7 @@
 }
 
 /* Timer-2 */
+
 .timer {
   margin-left: auto;
   margin-right: auto;
@@ -131,4 +134,167 @@
   font-size: 1.5rem;
   margin-top: 20px;
   font-weight: bold;
+}
+
+/* calendar */
+
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.even {
+  background-color: #8bc34a;
+}
+
+.odd {
+  background-color: #ffed3b;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.number-input {
+  max-width: 360px;
+  height: 40px;
+  border-radius: 6px;
+  display: block;
+  margin-right: 20px;
+  border: 1px solid #5e5e5e;
+  padding-left: 15px;
+}
+
+.number-btn {
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  height: 40px;
+  border-radius: 6px;
+  color: white;
+  min-width: 120px;
+}
+
+.film-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+.accordion-list-item {
+  position: relative;
+  transition: all 500ms linear;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  background-color: #fff;
+  display: none;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel.active {
+  display: block;
+}
+
+.modal {
+  background-color: #fff;
+  min-height: 200px;
+  max-width: 400px;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.calendar-container {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.month-name {
+  text-transform: capitalize;
+  margin: 0;
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.day-name {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: darkgray;
+}
+.day-number {
+  font-size: 80px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.year {
+  margin: 20px 0;
+  font-size: 20px;
+  color: darkgray;
+  font-weight: 500;
 }
