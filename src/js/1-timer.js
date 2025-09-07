@@ -53,13 +53,19 @@ const options = {
     if (pickedDate <= new Date()) {
       iziToast.error({
         title: 'Error',
-        message: 'Please choose a date in the future',
+        message: 'Please choose a date in the future!',
         position: 'topRight',
       });
       startBtn.disabled = true;
     } else {
       userSelectedDate = pickedDate;
       startBtn.disabled = false;
+
+      iziToast.success({
+        title: 'Success',
+        message: 'Valid date selected! You can start the timer!',
+        position: 'topRight',
+      });
     }
   },
 };
@@ -79,6 +85,7 @@ startBtn.addEventListener('click', () => {
       iziToast.success({
         title: 'The timer has ended',
         message: 'Time is up!',
+        position: 'topRight',
       });
       inputEl.disabled = false;
       return;
